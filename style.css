@@ -1,0 +1,402 @@
+body {
+    background-color: #f5e0eb;
+    margin:0 auto;
+    width:100%;
+    overflow-x: hidden;
+   
+}
+
+#title {
+    width:100%;
+    height: 100px;
+    background-color: #BB9CC0;
+    padding: 10px;
+}
+
+#title-text {
+    text-align:center;
+    font-family: Arial;
+    text-shadow: #E7BCDE 3px 1px 0px;
+    color: #67729d;
+    font-size: 40px;  
+}
+
+#menu {
+    width:100%;
+    height: 20px;
+    padding: 15px;
+    background-color: #E7BCDE;
+    color: #67729d;
+    
+    text-align:center;
+}
+#menu2 {
+    width:100%;
+    height: 20px;
+    padding: 15px;
+    background-color: #E7BCDE;
+    color: #67729d;
+    
+    text-align:center;
+    word-spacing: 5px;
+}
+
+h3 {  
+    display: inline;
+    margin: 0px 15px 0 0;
+}
+
+#main-text {
+    width:100%;
+    color: #67729d;
+    text-shadow: #E7BCDE 3px 1px 0px;
+    display: flex;
+    justify-content: space-between;
+    margin:0 20px 0 20px;
+}
+
+.text-pre {
+    display: inline;
+    text-align: justify;
+    margin:0;
+    font-size: 30px;
+}
+
+table {
+    display:inline-block;
+    border: #67729d 1px double;
+    box-shadow:#BB9CC0 1px 1px 0px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    width: 30%;
+}
+th, td {
+    
+    padding: 8px;
+    text-align: left;
+    font-size: 20px;
+}
+
+a {  width:100%;
+    height: 20px;
+    padding: 5px;
+    background-color: #E7BCDE;
+    color: #67729d;
+    text-shadow: #E7BCDE 3px 1px 0px;
+    text-align:center;
+}
+
+a:hover {
+    color:darkorchid;
+}
+
+#teraz {
+    color:darkorchid;
+}
+
+.photo-right {
+    border-radius:20px;
+    border:#67729d 3px double;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    width: 700px;
+    height: 688px;
+    margin-left:-20%;
+    
+
+}
+
+.photo-left {
+    border-radius:20px;
+    border:#67729d 3px double;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    width: 700px;
+    height: 688px;
+    margin-right:-20%;
+    margin-left: 15%;
+    
+    
+
+}
+
+.tab-right {
+        display:inline;
+        border: #67729d 1px double;
+        box-shadow:#BB9CC0 1px 1px 0px;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        margin-top: 30px;
+        width: 30%;
+        margin-right:3%;
+}
+
+
+#logo {
+    background-color: darkgrey;
+    border: 10px black solid;
+    border-radius: 50%;
+    position:absolute;
+    width: 50px;
+    height:50px;
+    margin: 25px 0 0 20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow: inset 0px 0px 10px gray;
+    transition: transform 2s ease-in-out;
+}
+
+#minilogo {
+  
+        background-color: black;
+        border-radius: 50%;
+        position:absolute;
+        width: 10px;
+        height:10px;
+        border: 2px grey solid;
+
+    
+}
+
+#minilogo1 {
+  
+    background-color: black;
+    border-radius: 50%;
+    position:absolute;
+    width: 3px;
+    height:3px;
+    margin: 5 5 0 0;
+
+
+}
+
+#minilogo2 {
+  
+    background-color: black;
+    border-radius: 50%;
+    position:absolute;
+    width: 3px;
+    height:3px;
+    margin: 10 0 0 5;
+
+
+}
+
+#minilogo3 {
+  
+    background-color: black;
+    border-radius: 50%;
+    position:absolute;
+    width: 3px;
+    height:3px;
+    margin: 0 5 5 0;
+
+
+}
+.megalogo{
+    height: 30px;
+}
+.megalogo1{
+    height: 30px;
+    transform: rotate(90deg);
+}
+.megalogo2{
+    height: 30px;
+    transform: rotate(180deg);
+}
+.megalogo3{
+    height: 30px;
+    transform: rotate(270deg);
+}
+.megalogo4{
+    height: 30px;
+    transform: rotate(45deg);
+}
+.megalogo5{
+    height: 30px;
+    transform: rotate(135deg);
+}
+.megalogo6{
+    height: 30px;
+    transform: rotate(225deg);
+}
+.megalogo7{
+    height: 30px;
+    transform: rotate(315deg);
+}
+#minilogo4 {
+  
+    background-color: black;
+    border-radius: 50%;
+    position:absolute;
+    width: 3px;
+    height:3px;
+    margin: 0 5 0 5;
+
+}
+
+
+#logo:hover {
+    transform: rotate(720deg);
+    cursor: pointer;
+}
+.galeria {
+    margin:200px;
+    
+    display:grid;
+    place-items:center;
+    
+}
+.gallery{
+    position:relative;
+    width:300px;
+    height:200px;
+    transform-style:preserve-3d;
+    animation:rotate 35s linear infinite;
+  }
+  
+  @keyframes rotate{
+    from{
+      transform:perspective(1200px) rotateY(0deg);
+    }
+    
+    to{
+      transform:perspective(1200px) rotateY(360deg);
+    }
+  }
+  
+  .gallery span{
+    position:absolute;
+    width:100%;
+    height:100%;
+    transform-origin:center;
+    transform-style:preserve-3d;
+    transform:rotateY(calc(var(--i) * 45deg)) translateZ(380px);
+  }
+  
+  .gallery span img{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+
+  .lista {
+      margin: 70px;
+      border: #67729d 1px double;
+  }
+
+  .list-text {
+      color: #67729d;
+  }
+
+  li {
+    color: #67729d;
+  }
+
+
+  .form {
+    border: #67729d 1px double;
+    width:30%;
+    text-align:center;
+    font-size:40px;
+    color:#67729d;
+    font-family:verdana;
+  }
+
+  .center {
+      align-items:center;
+      display:flex;
+      justify-content:center;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    #main-text {
+        flex-direction: column;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .tab-right {
+        margin-right: 0;
+    }
+
+    .photo-right,
+    .photo-left {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #menu,
+    #menu2 {
+        font-size: 14px;
+        height: 40px;
+        word-spacing: 5px;
+        line-height:30px;
+    }
+
+    .form {
+        width: 50%;
+    }
+  }
+    @media only screen and (max-width: 600px) {
+        #main-text {
+            flex-direction: column;
+        }
+    
+        table {
+            width: 100%;
+        }
+    
+        .tab-right {
+            width:100%;
+        }
+    
+        .photo-right,
+        .photo-left {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    
+        #menu,
+        #menu2 {
+            font-size: 10px;
+        }
+    
+        .form {
+            width: 80%;
+        }
+    
+
+    #logo {
+        background-color: darkgrey;
+        border: 10px black solid;
+        border-radius: 50%;
+        position:absolute;
+        width: 50px;
+        height:50px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        box-shadow: inset 0px 0px 10px gray;
+        transition: transform 2s ease-in-out;
+        
+        
+        
+    } 
+    
+    .lista {
+        left:0;
+        
+    }
+    .galeria
+    {
+        place-items:left;
+    }
+}
